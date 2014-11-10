@@ -1,0 +1,20 @@
+parameters:
+
+nette:
+	session:
+		expiration: 6 month
+
+doctrine:
+	charset: UTF8
+	host: xxx
+	driver: pdo_mysql
+	user: xxx
+	password: xxx
+	dbname: xxx
+	autoGenerateProxyClasses: %debugMode%
+	proxyDir: "%appDir%/proxy"
+	proxyNamespace: "proxy"
+
+	metadata:
+		App: annotations("%appDir%/entities")
+	cacheClass: DoctrineModule\Cache

@@ -1,0 +1,31 @@
+{
+    "name": "kampane/vanocni-soutez",
+    "description": "Vánoční soutěž",
+    "minimum-stability": "stable",
+    "keywords": ["devrun"],
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Pixman s.r.r.",
+            "email": "podpora@pixman.cz",
+            "www": "http://www.pixman.cz"
+        }
+    ],
+    "require": {
+        "nette/nette": "v2.2.3",
+        "kdyby/doctrine": "v2.1.0",
+        "kdyby/translation": "v2.0.3",
+        "kdyby/facebook": "~1.2",
+        "janmarek/webloader": "2.2.0",
+        "dg/adminer-custom": "v1.4.0",
+        "sakren/nette-menu": "1.0.4",
+        "flame/framework": "dev-master",
+        "flame/module-installer": "@dev",
+        "flame/modules": "@dev",
+        "symfony/property-access": "~2.5"
+
+    },
+    "require-dev": {
+        "nette/tester": "~1.2.0"
+    }
+}

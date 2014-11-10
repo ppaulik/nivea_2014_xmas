@@ -1,0 +1,46 @@
+services:
+	authorizator: AppModule\Security\Authorizator
+	authenticator: AppModule\Security\Authenticator(@manager.user)
+	- AppModule\Routers\RouterFactory
+	router: @AppModule\Routers\RouterFactory::createRouter
+
+	forms.quizOneFormFactory:
+		implement: AppModule\Forms\IQuizOneFormFactory
+		setup:
+			- create
+
+	forms.quizTwoFormFactory:
+		implement: AppModule\Forms\IQuizTwoFormFactory
+		setup:
+			- create
+
+#	forms.quizTreeFormFactory:
+#		implement: AppModule\Forms\IQuizTreeFormFactory
+#		setup:
+#			- create
+
+#	forms.quizFourFormFactory:
+#		implement: AppModule\Forms\IQuizFourFormFactory
+#		setup:
+#			- create
+
+	forms.registrationFormFactory:
+		implement: AppModule\Forms\IRegistrationFormFactory
+		setup:
+			- create
+
+	forms.loginFormFactory:
+		implement: AppModule\Forms\ILoginFormFactory
+		setup:
+			- create
+
+	entities.user: AppModule\Entities\UserEntity
+	entities.question: AppModule\Entities\QuestionEntity
+
+	manager.user: AppModule\Managers\UserManager(@doctrine.dao(AppModule\Entities\UserEntity), @doctrine.dao(AppModule\Entities\QuestionEntity))
+
+translation:
+	debugger: on
+	default: cs
+	whitelist: [cs, en, hu]
+	fallback: [cs_CZ, cs]

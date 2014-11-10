@@ -1,0 +1,33 @@
+nette:
+	debugger:
+		bar:
+			- Nette\Bridges\DITracy\ContainerPanel
+		maxDepth: 4
+		maxLen: 500
+		showLocation: true
+	container:
+		accessors: true
+
+	application:
+		debugger: true
+		errorPresenter: Error
+
+	session:
+		expiration: 6 month
+		autoStart: smart
+		save_path: %tempDir%/sessions
+
+doctrine:
+	charset: UTF8
+	driver: pdo_mysql
+	user: xxx
+	password: xxx
+	dbname: vanocni_soutez
+	autoGenerateProxyClasses: %debugMode%
+	proxyDir: "%tempDir%/proxies"
+	proxyNamespace: "proxy"
+
+	metadata:
+#		App: annotations("%appDir%/entitiesss")
+	cacheClass: DoctrineModule\Cache
+

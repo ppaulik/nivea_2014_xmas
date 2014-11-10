@@ -1,0 +1,35 @@
+
+{block content}
+<div class="part1">
+	<div class="status">
+		<span class="circle burn">&nbsp;</span>
+		<span class="line"></span>
+		<span class="circle full">2</span>
+		<span class="line"></span>
+		<span class="circle">3</span>
+		<span class="line"></span>
+		<span class="circle">4</span>
+	</div>
+</div>
+<div class="part2">
+	<div class="quiz">
+		<h1 class="h2">{_týden,1}</h1>
+		<strong class="fs22 fs-book">{_}k rozsvícení první svíčky stačí správně doplnit jednu z možností...{/_}</strong>
+	</div>
+
+	<div class="questions">
+		{form questionOneForm}
+		{foreach $form['quizOne']->items as $key => $label}
+			<div class="block-inline">
+				<input n:name="quizOne:$key">
+				<label n:name="quizOne:$key" class="_{$iterator->counter}">{$label}</label>
+			</div>
+		{/foreach}
+		{input send}
+		{/form}
+	</div>
+
+	<a class="btn next arrow">{_pokračovat}</a>
+	<div class="bottom-line"></div>
+</div>
+{/block}

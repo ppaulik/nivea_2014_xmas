@@ -1,0 +1,37 @@
+{block content}
+<div class="part1">
+	<div class="status">
+		<span class="circle burn">&nbsp;</span>
+		<span class="line"></span>
+		<span class="circle full">2</span>
+		<span class="line"></span>
+		<span class="circle">3</span>
+		<span class="line"></span>
+		<span class="circle">4</span>
+	</div>
+</div>
+<div class="part2">
+	<div class="quiz">
+		<h1 class="h2">2. týden</h1>
+		<p class="fs22">Jako každý rok můžete pro své blízké vybírat ze mnoha variant
+			<br>dárkových balení nejoblíbenějších výrobků NIVEA.</p>
+		<strong>Tipněte si, z kolika druhů balíčků letos můžete vybírat?</strong>
+		<p>Správná odpověď rozsvítí vaši druhou adventní svíčku.</p>
+	</div>
+	<div class="questions">
+		<a class="question1" n:href="answer, id=>1">a) <span class="btn-xlg">10</span></a>
+		<a class="question2" n:href="answer, id=>2">b) <span class="btn-xlg">15</span></a>
+		<a class="question3" n:href="answer, id=>3">c) <span class="btn-xlg">xx</span></a>
+	</div>
+
+
+	<div class="questions">
+		{control questionTwoForm}
+	</div>
+
+
+
+	<a class="btn next arrow">pokračovat</a>
+	<div class="bottom-line"></div>
+</div>
+{/block}

@@ -1,0 +1,17 @@
+.idea/*
+log/*
+temp/*
+test/temp*
+test/log*
+www/webtemp/*
+
+!temp/.*
+!temp/web.config
+!temp/cache/.gitignore
+!temp/sessions/.gitignore
+!temp/proxies/.gitignore
+!test/log/.gitignore
+!test/temp/.gitignore
+!test/temp/cache/.gitignore
+!test/temp/sessions/.gitignore
+!www/webtemp/.gitignore

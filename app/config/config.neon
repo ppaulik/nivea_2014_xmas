@@ -1,0 +1,45 @@
+#
+# SECURITY WARNING: it is CRITICAL that this file & directory are NOT accessible directly via a web browser!
+#
+# If you don't protect this directory from direct web access, anybody will be able to see your passwords.
+# http://nette.org/security-warning
+#
+parameters:
+	image:
+		thumbnailX: 160
+		thumbnailY: 160
+	contest:
+		sendData: false
+
+php:
+	date.timezone: Europe/Prague
+
+nette:
+	session:
+		autoStart: smart
+		save_path: %tempDir%/sessions
+
+	application:
+		mapping:
+			*: App\*Module\Presenters\*Presenter
+
+
+facebook:
+    appId: "932960370051495"
+    appSecret: "63f758b9c8da885e7bdfdc36fc13de6a"
+    permissions: [public_profile, email] # theese are the default read permissions, you might need to
+    graphVersion: v2.1
+
+
+extensions:
+	translation: Kdyby\Translation\DI\TranslationExtension
+	console: Kdyby\Console\DI\ConsoleExtension
+	events: Kdyby\Events\DI\EventsExtension
+	annotations: Kdyby\Annotations\DI\AnnotationsExtension
+	doctrine: Kdyby\Doctrine\DI\OrmExtension
+	webloader: WebLoader\Nette\Extension
+	menu: DK\Menu\DI\Extension
+	modules: Flame\Modules\DI\ModulesExtension
+	doctrineForms: CmsModule\Doctrine\DI\FormsExtension
+	facebook: Kdyby\Facebook\DI\FacebookExtension
+	front: AppModule\DI\AppExtension

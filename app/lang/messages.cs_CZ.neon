@@ -1,0 +1,33 @@
+# --- homepage ---
+přejete si zapálit svou další svíčku: "Přejete si zapálit svou další svíčku"
+přihlašte se: "Přihlašte se, prosím"
+přihlásit se: "Přihlásit se"
+přihlásit přes facebook: "Přihlásit přes facebook"
+rozsviťte si: "Rozsviťte si"
+nivea vánoce a vyhrajte: "Nivea vánoce a vyhrajte"
+
+zastavte se s námi na chvíli...: "Zastavte se s námi na chvíli, rozsviťte si každou předvánoční neděli jednu adventní"
+vyhrajte dárkové balíčky NIVEA...: "svíčku a vyhrajte dárkové balíčky NIVEA pro vás i vašeho partnera nebo unikátní svíčku"
+s originální NIVEA vuní: "s originální NIVEA vůní"
+
+pokračovat na soutěž: "Pokračovat na soutěž"
+
+svicka: svíčka   # img alt
+balicek: balíček # img alt
+
+# --- quiz 1 ---
+týden: "%count% týden"
+k rozsvícení první svíčky stačí správně doplnit jednu z možností...: "K rozsvícení první svíčky stačí správně doplnit jednu z možností, která doplní obrázek NIVEA Sprchového gelu Creme Care s oblíbenou originální vůní krému NIVEA"
+pokračovat: "Pokračovat"
+thanks: "Děkujeme"
+
+# --- quiz 2 ---
+
+
+# --- flashes ---
+facebook authentication failed: "Problém s facebook připojením"
+email from facebook account not found: "Facebook email nutný ke spárování účtů nebyl nalezen"
+facebook account not found: "Facebook účet nenalezen"
+facebook authentication failed hard: "Sorry bro, facebook authentication failed hard."
+vámi zadaná emailová adresa již existuje: "Vámi zadaná emailová adresa již existuje"
+

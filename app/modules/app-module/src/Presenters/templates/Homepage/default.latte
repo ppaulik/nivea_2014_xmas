@@ -1,0 +1,39 @@
+{block content}
+	<div class="part1">
+		{if !$user->isLoggedIn()}
+		<div class="login_box">
+			<strong>{_}přejete si zapálit svou další svíčku{/_}?</strong>
+			<p>{_}přihlašte se{/_}:</p>
+			<div class="clearfix">
+				<button class="btn arrow login">{_}přihlásit se{/_}</button>
+				<a n:href="fbLogin-open!" class="btn arrow fb-login"><span class="glyphicon fb"></span>&nbsp;{_}přihlásit přes facebook{/_}</a>
+			</div>
+		</div>
+		{else}
+		<div class="logged"><a n:href="logoff">logoff [test]</a></div>
+		{/if}
+	</div>
+	<div class="part2">
+		<h1>{_}rozsviťte si{/_}<br>{_}nivea vánoce a vyhrajte{/_}</h1>
+		<p class="fs15">{_}zastavte se s námi na chvíli...{/_}<br>
+			{_}vyhrajte dárkové balíčky NIVEA...{/_}<br>
+			{_}s originální NIVEA vuní{/_}.</p>
+		<a n:href="Question:" class="btn-lg arrow">{_}pokračovat na soutěž{/_}</a>
+		<div class="bottom-line"></div>
+	</div>
+
+	<div class="part3">
+		<div class="candle">
+			<img src="{$basePath}/images/svicka.png" alt="{_svicka}">
+		</div>
+		<div class="bag">
+			<img src="{$basePath}/images/balicek1.png" alt="{_balicek}">
+		</div>
+	</div>
+{/block}
+
+{block popup}
+	<div class="popup">
+		{control loginForm}
+	</div>
+{/block}
